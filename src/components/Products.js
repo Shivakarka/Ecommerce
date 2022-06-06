@@ -7,7 +7,7 @@ function Products() {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
   const [loading, setLoading] = useState(false);
-  
+
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);
@@ -21,8 +21,6 @@ function Products() {
     getProducts();
   }, []);
 
-
- 
   return (
     <div className="container my-5 py-5">
       <div className="row">
@@ -31,7 +29,11 @@ function Products() {
         </div>
       </div>
       <div className="row justify-content-center">
-        {loading ? <Spinner animation="border" /> : <DisplayProducts setFilter={setFilter} data={data} filter={filter}/>}
+        {loading ? (
+          <Spinner animation="border" />
+        ) : (
+          <DisplayProducts setFilter={setFilter} data={data} filter={filter} />
+        )}
       </div>
     </div>
   );
