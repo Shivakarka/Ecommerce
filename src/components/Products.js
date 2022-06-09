@@ -12,7 +12,7 @@ function Products() {
     const getProducts = async () => {
       setLoading(true);
       const response = await fetch(
-        "https://my-json-server.typicode.com/Shivakarka/Ecomm-dummyapi/posts"
+        "https://fakestoreapi.com/products"
       );
       setData(await response.clone().json());
       setFilter(await response.json());

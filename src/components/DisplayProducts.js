@@ -26,11 +26,11 @@ const DisplayProducts = ({ data, filter, setFilter }) => {
     }
   };
 
-  const handleDelete = (id) => {
-    const newList = data.filter((x) => x.id !== id);
-    setFilter(newList);
-    toast("Product deleted");
-  };
+  // const handleDelete = (id) => {
+  //   const newList = data.filter((x) => x.id !== id);
+  //   setFilter(newList);
+  //   toast("Product deleted");
+  // };
 
   const filterProduct = (event) => {
     const updatedList = data.filter((x) => x.category === event);
@@ -128,16 +128,16 @@ const DisplayProducts = ({ data, filter, setFilter }) => {
                       to={`/product/${product.id}`}
                       className="btn btn-outline-dark"
                     >
-                      <FaListUl />
+                      <FaListUl /> Info
                     </Link>
-                    <span
+                    {/* <span
                       className="btn btn-outline-dark ms-2 "
                       onClick={() => {
                         handleDelete(product.id);
                       }}
                     >
                       <FaTrash />
-                    </span>
+                    </span> */}
                   </div>
                 </AnimationWrapper>
               </div>

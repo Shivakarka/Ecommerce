@@ -20,7 +20,7 @@ function Product() {
     const getProduct = async () => {
       setLoading(true);
       const response = await fetch(
-        `https://my-json-server.typicode.com/Shivakarka/Ecomm-dummyapi/posts/${id}`
+        `https://fakestoreapi.com/products/${id}`
       );
 
       setProduct(await response.json());
@@ -37,8 +37,8 @@ function Product() {
             className="card"
             src={product.image}
             alt={product.title}
-            height="500px"
-            width="450px"
+            height="400px"
+            width="350px"
           />
         </div>
         <div className="col-md-6">
