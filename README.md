@@ -38,7 +38,7 @@ Create the frontend for an ecommerce website.
 
 <b>Toasts/Notifications</b><br>
 
- - Dummy api data is created using https://my-json-server.typicode.com/ 
+ - Prdoucts data is fetched through a Fake api service - [https://my-json-server.typicode.com/ ](https://fakestoreapi.com/)
  - Redux/Redux-toolkit is used for state management.
  - Styled using react-bootstrap.
 
