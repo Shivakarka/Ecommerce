@@ -109,6 +109,8 @@ const DisplayProducts = ({ data, filter, setFilter }) => {
                       className="card-img-top img-fluid"
                       src={product.image}
                       alt={product.title}
+                      width={300}
+                      height={300}
                     />
                   </div>
                   <div className="card-body">
