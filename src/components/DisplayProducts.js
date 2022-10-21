@@ -106,7 +106,7 @@ const DisplayProducts = ({ data, filter, setFilter }) => {
                 <AnimationWrapper>
                   <div className="bg-image">
                     <img
-                      className="card-img-top img-fluid"
+                      className="card-img-top"
                       src={product.image}
                       alt={product.title}
                       width={300}
